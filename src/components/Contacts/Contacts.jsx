@@ -7,12 +7,15 @@ export const Contacts = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(getContact);
 
-  const filter = useSelector(getFilter);
-  const normFilter = filter.toLowerCase();
+  const filters = useSelector(getFilter);
+  const normFilter = filters.toLowerCase();
+
   const filterContactList = contacts.filter(contact =>
     contact.name.toLowerCase().includes(normFilter)
   );
-
+  // if (!contacts) {
+  //   return;
+  // }
   return (
     <ul>
       {filterContactList.map(({ id, name, phone }) => (

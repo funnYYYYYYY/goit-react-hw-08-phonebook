@@ -1,6 +1,6 @@
 import { Navigation } from '../Navigation/Navigation';
 import { AuthNav } from 'components/AuthNav/AuthNav';
-import { Contacts } from 'components/Contacts/Contacts';
+
 import { useAuth } from 'hooks';
 
 import css from './AppBar.module.css';

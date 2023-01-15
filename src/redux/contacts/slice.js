@@ -1,13 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { addContacts, deleteContacts, fetchContacts } from './operation';
+import { addContacts } from './operation';
 
-const handlePending = state => {
-  state.isLoading = true;
-};
-const handleRejected = (state, action) => {
-  state.isLoading = false;
-  state.error = action.payload;
-};
+// const handlePending = state => {
+//   state.isLoading = true;
+// };
+// const handleRejected = (state, action) => {
+//   state.isLoading = false;
+//   state.error = action.payload;
+// };
 
 const initialState = {
   items: [],

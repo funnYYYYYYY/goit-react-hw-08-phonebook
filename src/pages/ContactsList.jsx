@@ -7,7 +7,7 @@ import { Form } from '../components/Form/Form';
 import { Contacts } from 'components/Contacts/Contacts';
 import { Filter } from 'components/Filter/Filter';
 
-export const ContactsList = () => {
+export default function ContactsList() {
   const dispatch = useDispatch();
   const isLoading = useSelector(getIsLoading);
 
@@ -28,4 +28,4 @@ export const ContactsList = () => {
       </>
     </HelmetProvider>
   );
-};
+}

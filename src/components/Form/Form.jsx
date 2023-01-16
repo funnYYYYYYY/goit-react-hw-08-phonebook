@@ -14,7 +14,6 @@ export const Form = () => {
   const dispatch = useDispatch();
 
   const handleSubmit = e => {
-    console.log('click');
     e.preventDefault();
     const correctName = name.toLowerCase();
     const IsContactList = contacts.find(
